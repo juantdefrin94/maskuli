@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".UserCartFragment"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keranjang Anda"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_below="@id/title"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="75sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="75sp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black" />
+
+    <ScrollView
+        android:id="@+id/kuliContainer"
+        android:layout_below="@id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/kuli_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            tools:listitem="@layout/template_kuli" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_below="@id/kuliContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Tanggal Mulai"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20sp"
+                android:textAlignment="center">
+            </TextView>
+
+            <Button
+                android:id="@+id/bDateStart"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:backgroundTint="#2D305B"
+                android:gravity="center"
+                android:text="JAN 01 2022"
+                android:textColor="#ECEEFD"
+                android:background="@color/main_color"
+                android:textSize="18sp"></Button>
+
+            <TextView
+                android:id="@+id/endText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Tanggal Selesai"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="35sp">
+            </TextView>
+
+            <Button
+                android:id="@+id/bDateEnd"
+                android:layout_width="250sp"
+                android:layout_height="60sp"
+                android:backgroundTint="#2D305B"
+                android:gravity="center"
+                android:text="JAN 01 2022"
+                android:textColor="#ECEEFD"
+                android:textSize="18sp"
+                android:layout_marginBottom="80sp"
+                android:background="@color/main_color"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/order_kuli_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40sp"
+        android:text="Pesan Sekarang" />
+
+</RelativeLayout>

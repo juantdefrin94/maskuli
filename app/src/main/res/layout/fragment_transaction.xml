@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.transaction.TransactionFragment"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/riwayat_transaksi"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/black"
+        android:layout_marginLeft="75sp"
+        android:layout_marginRight="75sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/template_transaction"/>
+
+</LinearLayout>

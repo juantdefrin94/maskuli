@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_color">
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:background="@color/main_color"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:onClick="toHome"
+            android:id="@+id/home"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/beranda"
+            android:drawableTop="@drawable/home"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:onClick="toSearch"
+            android:id="@+id/search"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cari_kuli"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:drawableTop="@drawable/search" />
+
+        <TextView
+            android:onClick="toTransaction"
+            android:id="@+id/transaction"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/transaksi"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:drawableTopCompat="@drawable/transaction" />
+
+        <TextView
+            android:onClick="toProfile"
+            android:id="@+id/profile"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/profil"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:drawableTopCompat="@drawable/profile" />
+
+    </LinearLayout>
+
+</RelativeLayout>

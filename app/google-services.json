@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37586680797",
+    "firebase_url": "https://maskuliapp-default-rtdb.firebaseio.com",
+    "project_id": "maskuliapp",
+    "storage_bucket": "maskuliapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37586680797:android:d1e5f8be41b546fd4fd434",
+        "android_client_info": {
+          "package_name": "com.juvigaf.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37586680797-3oruc1h21682ct1ujq4mu8ak4phj4kf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzoCChOqvvBWgU0_G_j3uG6ffv2SUgCTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37586680797-3oruc1h21682ct1ujq4mu8ak4phj4kf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250sp"
+    android:background="@color/container_color"
+    android:layout_margin="10sp"
+    android:clickable="true"
+    android:id="@+id/containerKuli">
+
+    <ImageView
+        android:id="@+id/kuliProfile"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_below="@id/kuliProfile"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:id="@+id/kuliName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kuliName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_below="@id/kuliName"
+        android:id="@+id/kuliRole"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/peran_peran"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_below="@id/kuliRole"
+        android:id="@+id/kuliRating"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating: 5.0"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/check_box"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
